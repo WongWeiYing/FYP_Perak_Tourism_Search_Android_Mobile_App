@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+final Widget gapHeight4 = SizedBox(height: 4.h);
+final Widget gapHeight8 = SizedBox(height: 8.h);
+final Widget gapHeight12 = SizedBox(height: 12.h);
+final Widget gapHeight16 = SizedBox(height: 16.h);
+final Widget gapHeight24 = SizedBox(height: 24.h);
+final Widget gapHeight32 = SizedBox(height: 32.h);
+final Widget gapHeight36 = SizedBox(height: 36.h);
+//final Widget gapHeight48 = SizedBox(height: 48.h);
+//final Widget gapHeight64 = SizedBox(height: 64.h);
+//final Widget gapHeight80 = SizedBox(height: 80.h);
+final Widget gapHeight100 = SizedBox(height: 100.h);
+//final Widget gapHeight120 = SizedBox(height: 120.h);
+//final Widget gapHeight140 = SizedBox(height: 140.h);
+//final Widget gapHeight160 = SizedBox(height: 160.h);
+//final Widget gapHeight180 = SizedBox(height: 180.h);
+final Widget gapHeight200 = SizedBox(height: 200.h);
+//final Widget gapHeight240 = SizedBox(height: 240.h);
+
+final Widget gapWidth4 = SizedBox(width: 4.w);
+final Widget gapWidth8 = SizedBox(width: 8.w);
+final Widget gapWidth12 = SizedBox(width: 12.w);
+final Widget gapWidth16 = SizedBox(width: 16.w);
+final Widget gapWidth24 = SizedBox(width: 24.w);
+//final Widget gapWidth32 = SizedBox(width: 32.w);
+//final Widget gapWidth48 = SizedBox(width: 48.w);
+//final Widget gapWidth64 = SizedBox(width: 64.w);
+//final Widget gapWidth80 = SizedBox(width: 80.w);

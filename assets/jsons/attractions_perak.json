@@ -1,0 +1,40 @@
+[
+    {
+      "name": "Kellie's Castle",
+      "image": "https://3.bp.blogspot.com/-cuv4BL93NyI/UU8tEj-pD2I/AAAAAAAAHtE/_cQdx0cVpS4/s1600/130317-Kellie's+Castle+001.jpg",
+      "description": "An unfinished mansion built by Scottish planter William Kellie-Smith, offering a glimpse into colonial history and rumored to be haunted.",
+      "address": "Batu Gajah, Perak"
+    },
+    {
+      "name": "Lost World of Tambun",
+      "image": "https://1.bp.blogspot.com/-3deF3TmQKJs/WjaCPFNYjTI/AAAAAAAAAEg/aIyRQaqL4LkP7mqeukvZZpWUnXF8ObhyACLcBGAs/s1600/lost-world-of-tambun.jpeg",
+      "description": "A theme park featuring water attractions, hot springs, a petting zoo, and adventure activities, set amidst limestone hills.",
+      "address": "No. 1, Persiaran Lagun Sunway, Sunway City, 31150 Ipoh, Perak"
+    },
+    {
+      "name": "Perak Cave Temple",
+      "image": "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/06/27/1e6368636c4638805318f5c11ba2a58f_1000x1000.jpg",
+      "description": "A Chinese Buddhist temple set within a limestone cave, known for its impressive murals and a large golden Buddha statue.",
+      "address": "6, Jalan Kuala Kangsar, Kawasan Perindustrian Tasek, 31400 Ipoh, Perak"
+    },
+    {
+      "name": "Ipoh Railway Station",
+      "image": "https://theipohguide.com/wp-content/uploads/2020/02/ipoh-railway-station-facebook-1600x840.jpg",
+      "description": "A historic railway station known for its majestic colonial architecture, often referred to as the 'Taj Mahal of Ipoh.'",
+      "address": "Jalan Panglima Bukit Gantang Wahab, 30000 Ipoh, Perak"
+    },
+
+    {
+      "name": "Gua Tempurung",
+      "image": "https://www.malaysia.travel/storage/photos/254/Tempurung%20Cave/hero_guatempurung.jpg",
+      "description": "One of the largest limestone caves in Peninsular Malaysia, offering guided tours through its impressive caverns.",
+      "address": "Pusat Pelancongan Gua Tempurung, 31600 Gopeng, Perak"
+    },
+    {
+      "name": "Han Chin Pet Soo Museum",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/47107425894_7192b77311_o_20190724185216.jpg",
+      "description": "Malaysia's first Hakka tin mining museum, offering insights into the tin mining history and Hakka culture.",
+      "address": "3, Jalan Bijeh Timah, 30100 Ipoh, Perak"
+    }
+  ]
+  
