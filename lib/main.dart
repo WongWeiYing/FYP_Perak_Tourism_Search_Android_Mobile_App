@@ -26,7 +26,7 @@ void main() async {
   await Supabase.initialize(
     url: 'https://mgjdhfjzxxmcwhsxjjln.supabase.co',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1namRoZmp6eHhtY3doc3hqamxuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ3NzkyNTQsImV4cCI6MjA2MDM1NTI1NH0.p21z7HR04x9lg9PSn6JlXitrUzbfNco2EipLXXdM3M8',
+        '',
   );
 
   final prefs = await SharedPreferences.getInstance();
@@ -44,10 +44,6 @@ void main() async {
     ),
   );
 }
-
-// void enableScreenshot() async {
-//   await FlutterWindowManager.clearFlags(FlutterWindowManager.FLAG_SECURE);
-// }
 
 class MainApp extends HookConsumerWidget {
   final String? userID;
