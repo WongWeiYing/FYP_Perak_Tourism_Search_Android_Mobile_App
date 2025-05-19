@@ -24,7 +24,7 @@ void main() async {
   cameras = await availableCameras();
 
   await Supabase.initialize(
-    url: 'https://mgjdhfjzxxmcwhsxjjln.supabase.co',
+    url: 'https://.supabase.co',
     anonKey:
         '',
   );
