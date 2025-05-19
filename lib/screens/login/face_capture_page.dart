@@ -152,7 +152,7 @@ Future<bool> compareFaces(String icFacePath, String liveFacePath) async {
 
   final url = Uri.parse('https://api-us.faceplusplus.com/facepp/v3/compare');
   final request = http.MultipartRequest('POST', url)
-    ..fields['api_key'] = 'bitNrUBohnf2fnKmk8Xvn8rTvNSw-zgG'
+    ..fields['api_key'] = ''
     ..fields['api_secret'] = 'YN5Ka-3-G1MT7put0LAHhEglWSKOcnpr'
     ..files.add(
         await http.MultipartFile.fromPath('image_file1', icFaceCompressed.path))
