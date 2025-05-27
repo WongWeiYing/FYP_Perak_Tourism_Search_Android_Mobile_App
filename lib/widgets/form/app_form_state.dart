@@ -48,21 +48,7 @@ class AppFormState extends State<AppForm> {
     });
   }
 
-  void validateFormButton() {
-    // bool isAllFilled = true;
-    // context.visitChildElements((parent) {
-    //   _visit(parent, onError: (_) {
-    //     isAllFilled = false;
-    //   }, validateButton: true);
-    // });
-
-    // context.visitChildElements((parent) {
-    //   _validateButton(parent, isAllFilled);
-    // });
-  }
-
-  /// Visit each of the children of the parent element
-  /// [validateButton]
+ 
   void _visit(
     Element parent, {
     required Function(BuildContext context) onError,
@@ -91,158 +77,7 @@ class AppFormState extends State<AppForm> {
           formData[state.widget.fieldKey] = state.onSaved();
         }
       }
-      // else if (element.widget is AppDropdown) {
-      //   final state = (element as StatefulElement).state as AppDropdownState;
-
-      //   if (validateButton) {
-      //     if (!state.validate()) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     final isValid = state.validate();
-
-      //     if (!isValid) {
-      //       onError(state.context);
-      //     } else {
-      //       formData[state.widget.fieldKey] = state.onSaved();
-      //     }
-      //   }
-      // } else if (element.widget is AppCheckbox) {
-      //   final state = (element as StatefulElement).state as AppCheckboxState;
-
-      //   if (validateButton) {
-      //     if (!state.validate()) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     final isValid = state.validate();
-
-      //     if (!isValid) {
-      //       onError(state.context);
-      //     } else {
-      //       formData[state.widget.fieldKey] = state.onSaved();
-      //     }
-      //   }
-      // } else if (element.widget is AddressDetailsForm) {
-      //   final state =
-      //       (element as StatefulElement).state as AddressDetailsFormState;
-
-      //   if (validateButton) {
-      //     if (!state.validate()) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     bool isValid = true;
-
-      //     _visit(element, onError: (context) {
-      //       onError(context);
-      //       isValid = false;
-      //     });
-
-      //     if (isValid) {
-      //       if (state.widget.fieldKey != null) {
-      //         formData[state.widget.fieldKey!] = state.onSaved();
-      //       } else {
-      //         formData[AppFormFieldKey.addressDetailsFormKey] = state.onSaved();
-      //       }
-      //     }
-      //   }
-      // } else if (element.widget is AppMobileFormField) {
-      //   final state =
-      //       (element as StatefulElement).state as AppMobileFormFieldState;
-
-      //   if (validateButton) {
-      //     if (!state.validate()) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     bool isValid = true;
-
-      //     _visit(element, onError: (context) {
-      //       onError(context);
-      //       isValid = false;
-      //     });
-
-      //     if (isValid) {
-      //       formData[AppFormFieldKey.countryCodeKey] =
-      //           state.onSaved().countryCode;
-      //       formData[AppFormFieldKey.mobileNumberKey] =
-      //           state.onSaved().mobileNumber;
-      //     }
-      //   }
-      // } else if (element.widget is AppDocumentImageFormField) {
-      //   final state = (element as StatefulElement).state
-      //       as AppDocumentImageFormFieldState;
-
-      //   if (validateButton) {
-      //     state.validateImage();
-
-      //     if (((element.widget as AppDocumentImageFormField).frontImage ==
-      //             null) ||
-      //         ((element.widget as AppDocumentImageFormField).backImage ==
-      //             null)) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     final isValid = state.validateImage();
-
-      //     if (!isValid) {
-      //       onError(state.context);
-      //     } else {
-      //       formData[AppFormFieldKey.documentFrontImageKey] =
-      //           state.onSaved().frontImage;
-      //       formData[AppFormFieldKey.documentBackImageKey] =
-      //           state.onSaved().backImage;
-      //     }
-      //   }
-      // } else if (element.widget is AppUploadDocumentWidget) {
-      //   final state =
-      //       (element as StatefulElement).state as AppUploadDocumentWidgetState;
-
-      //   if (validateButton) {
-      //     state.validate();
-
-      //     if (!state.validate()) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     bool isValid = state.validate();
-
-      //     if (isValid) {
-      //       formData[AppFormFieldKey.proofDocKey] = state.onSaved();
-      //     } else {
-      //       onError(state.context);
-      //     }
-      //   }
-      // } else if (element.widget is SignAuthoriesWidget) {
-      //   final state = (element as StatefulElement).state as SignWidgetState;
-
-      //   if (validateButton) {
-      //     if (!state.validate()) {
-      //       onError(context);
-      //     }
-      //   } else {
-      //     final isValid = state.validate();
-
-      //     if (!isValid) {
-      //       onError(state.context);
-      //     } else {
-      //       formData[state.widget.fieldKey] = await state.onSaved();
-      //     }
-      //   }
-      // } else if (element.widget is SignatureContainer) {
-      //   final state =
-      //       (element as StatefulElement).state as SignatureContainerState;
-
-      //   if (!validateButton) {
-      //     if (state.widget.signatureController.isEmpty) {
-      //       onError(state.context);
-      //     } else {
-      //       formData[state.widget.key.toString()] =
-      //           state.widget.signatureController.value.isNotEmpty;
-      //     }
-      //   }
-      //}
+     
       else {
         _visit(element, onError: onError, validateButton: validateButton);
       }
@@ -258,19 +93,7 @@ class AppFormState extends State<AppForm> {
           state.setError(errorMsg ?? 'Invalid Value');
         }
       }
-      // else if (element.widget is AppDocumentImageFormField) {
-      //   final state = (element as StatefulElement).state
-      //       as AppDocumentImageFormFieldState;
-      //   if (state.widget.fieldKey == fieldKey) {
-      //     state.setError(true);
-      //   }
-      // } else if (element.widget is AppUploadDocumentWidget) {
-      //   final state =
-      //       (element as StatefulElement).state as AppUploadDocumentWidgetState;
-      //   if (state.widget.fieldKey == fieldKey) {
-      //     state.setError(errorMsg ?? 'Invalid Value');
-      //   }
-      // }
+     
       else {
         _setError(element, fieldKey: fieldKey, errorMsg: errorMsg);
       }
