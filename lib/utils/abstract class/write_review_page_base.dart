@@ -12,7 +12,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-abstract class WriteReviewPageBase extends ConsumerStatefulWidget {
+class WriteReviewPageBase extends ConsumerStatefulWidget {
   final String title;
   final String bucketName;
   //final String userID;
